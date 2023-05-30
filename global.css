@@ -1,0 +1,49 @@
+/* general */
+
+:root {}
+
+html {}
+
+body {}
+
+li {
+    list-style-type: none;
+}
+
+/* header */
+
+header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.desktopMenu {
+    display: none;
+    width: 400px;
+}
+
+.desktopMenu ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.headerLogo {
+    text-align: center;
+}
+
+.searchIcon {
+    text-align: right;
+}
+
+@media screen and (min-width : 1200px) {
+    .burgerIcon {
+        display: none;
+    }
+
+    .desktopMenu {
+        display: initial;
+    }
+
+}
+
+/* footer */
