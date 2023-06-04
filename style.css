@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "poppins";
+  color: #000;
+}
+
+* nav {
+  background-color: #bf9e73;
+  height: 120px;
+  max-width: 100%;
+  position: content;
+}
+
+body {
+  background-color: #d9c5ab;
+  text-align: center;
+}
+
+label .logo {
+  line-height: 100%;
+  margin: 0;
+  font-weight: 600;
+  text-align: center;
+  padding-left: 140px;
+}
+
+nav ul {
+  float: left;
+  margin-right: 60px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 20px;
+  margin: 0 80px;
+  justify-content: center;
+  list-style: none;
+  text-decoration-style: none;
+}
+
+.checkbox {
+  display: none;
+  float: left;
+  font-size: 30px;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+.check {
+  display: none;
+}
+
+/* primaries */
+.colgroup {
+  --primary-main-color-: #073a21;
+  --primary-color: #c69c6d;
+  --secondary-main-color: #009245;
+  --secondary-color: #d9c5ab;
+  --background-color: #bf9e73;
+  --other-color: #000;
+}
+
+@media (max-width: 1060px) {
+  label .logo {
+    padding-left: 25px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 858px) {
+  .checkbox {
+    display: block;
+    margin-right: 40px;
+  }
+  .nav ul {
+    position: fixed;
+  }
+}
+
+.img-container {
+  max-width: 100%;
+}
+
+.hero img {
+  max-width: 100%;
+  height: auto;
+}
+
+.cta-button {
+  color: var(--cta-color-button);
+}
+
+/*background*/
+
+/* header */
+
+/* footer */
+footer {
+  background-color: #bf9e73;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  color: #000;
+}
+
+footer {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer {
+  display: inline;
+  margin-right: 10px;
+}
+
+footer {
+  color: #555;
+  text-decoration: none;
+  padding: 80px;
+  color: var(--other-color-1);
+  background-color: var(--primary-main-color);
+  display: grid;
+  gap: 60px;
+  justify-items: center;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+}

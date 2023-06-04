@@ -1,49 +1,164 @@
-/* general */
+/* General */
 
-:root {}
+:root {
+  --primary-main-color-: #073a21;
+  --primary-color: #c69c6d;
+  --secondary-main-color: #009245;
+  --secondary-color: #d9c5ab;
+  --background-color: #bf9e73;
+  --other-color: #000;
+}
 
-html {}
-
-body {}
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins";
+  font-size: 19px;
+  overflow-x: hidden;
+}
 
 li {
-    list-style-type: none;
+  list-style-type: none;
 }
-
-/* header */
+button {
+  background-color: var(--secondary-main-color);
+  border: none;
+  padding: 5px;
+  color: white;
+}
+/* Header */
 
 header {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+  height: 100%;
+  width: 100vw;
 }
 
-.desktopMenu {
-    display: none;
-    width: 400px;
+.mobileNav {
+  display: flex;
+  background-color: var(--secondary-color);
+  height: 66px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 0px;
 }
 
-.desktopMenu ul {
-    display: flex;
-    justify-content: space-evenly;
+img {
+  height: 75%;
+  width: auto;
+  object-fit: contain;
 }
 
-.headerLogo {
-    text-align: center;
+.brandIcon {
+  height: 100%;
+  width: 100%;
+}
+.mobileMenu {
+  width: 320px;
+  background-color: var(--secondary-main-color);
+  height: 100vh;
+  position: absolute;
+  top: 0px;
+  display: none;
 }
 
-.searchIcon {
-    text-align: right;
+.mobileMenu a {
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  align-items: center;
+  margin-bottom: 28px;
 }
 
-@media screen and (min-width : 1200px) {
-    .burgerIcon {
-        display: none;
-    }
+.mobileMenu ul {
+  margin-left: 50px;
+  padding-left: 0px;
+  margin-top: 40px;
+}
 
-    .desktopMenu {
-        display: initial;
-    }
+.closeIcon {
+  width: 49px;
+  height: 49px;
+  margin-top: 15px;
+  margin-left: 15px;
+}
 
+.mobileMenuIcon {
+  height: 35px;
+  margin-right: 5px;
 }
 
 /* footer */
+footer {
+  background-color: var(--secondary-color);
+  padding: 10px;
+}
+
+.footerLogoWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.footerLogoWrapperText {
+  font-size: 12px;
+  margin: 0px;
+}
+
+.newsletterWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 25px;
+}
+
+.newsletterWrapper input {
+  width: 150px;
+}
+
+.socialLogo {
+  width: 20px;
+  height: 20px;
+}
+
+.footerTitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--primary-main-color-);
+}
+
+.footerBottom {
+  display: flex;
+  width: 100%;
+  font-size: 12px;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.footerBottom a {
+  text-decoration: none;
+  color: #000;
+}
+
+.footerBottom ul {
+  padding: 0px;
+}
+
+.footerBottom li {
+  margin: 8px 0px;
+}
+
+.footerContactIcon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.footerContactItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footerBottomItem {
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+}
