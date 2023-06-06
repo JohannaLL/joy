@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./menu.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,16 +17,37 @@
 
   <body>
     <header>
-      <nav class="mobileNav">
-        <img src="./asset/icons/burger-svg.svg" alt="menu" />
-        <a href="index.html">
-          <img
-        src="./asset/images/joy-logo-web.png"
-        alt="logo joy"
-        class="brandIcon"
-      />
-      </a>
-      <img src="./asset/icons/search-icon.png" alt="search-icon" />
+      <nav class="headerNav">
+        <img src="./asset/icons/burger-svg.svg" alt="menu" class="burgerIcon" />
+        <div class="desktopNav">
+          <ul>
+            <li>
+              <a href="index.html"> Accueil</a>
+            </li>
+            <li>
+              <a id="active" href="menu.html"> Le menu</a>
+            </li>
+            <li>
+              <a href="a-propos.html"> À propos</a>
+            </li>
+            <li>
+              <a href="contact.html"> Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="brandIconWrapper">
+          <a href="index.html">
+            <img
+              src="./asset/images/joy-logo-web.png"
+              alt="logo joy"
+              class="brandIcon"
+            />
+          </a>
+        </div>
+        <div class="searchWrapper">
+          <img src="./asset/icons/search-icon.png" alt="search-icon" />
+          <input class="searchInput" placeholder="Rechercher..." />
+        </div>
       </nav>
       <nav class="mobileMenu">
         <img
@@ -35,7 +57,7 @@
         />
         <ul>
           <li>
-            <a class="active" href="index.html">
+            <a class="active" href="#">
               <img
                 src="./asset/icons/accueil-icon.png"
                 alt="home"
@@ -78,9 +100,7 @@
       </nav>
     </header>
 
-    <main>
-      Menu
-    </main>
+    <main>Menu</main>
 
     <footer>
       <div class="footerLogoWrapper">
@@ -88,10 +108,12 @@
       </div>
 
       <h2 class="footerTitle">Recevez notre newsletter</h2>
-      <p class="footerLogoWrapperText">
-        Ne manquez pas l’opportunité de découvrir nos plats exclusifs et les
-        dates de prochains évènements
-      </p>
+      <div class="neswletterText">
+        <h3 class="footerLogoWrapperText">
+          Ne manquez pas l’opportunité de découvrir nos plats exclusifs et les
+          dates de prochains évènements
+        </h3>
+      </div>
 
       <div class="newsletterWrapper">
         <div>
@@ -100,20 +122,22 @@
             <button type="submit">Inscrivez-vous</button>
           </form>
         </div>
-        <div>
-          <h2 class="footerLogoWrapperText">Suivez-nous</h2>
-          <img
-            src="./asset/icons/facebook-icon.png"
-            alt="facebook-icon"
-            class="socialLogo"
-          />
-          <img class="socialLogo" src=./asset/icons/instagram-icon.png alt=
-          "insta-icon">
-          <img
-            class="socialLogo"
-            src="./asset/icons/linkedin-icon.png"
-            alt="linkedin-icon"
-          />
+        <div class="social">
+          <h4 class="footerLogoWrapperText">Suivez-nous</h4>
+          <div class="socialLogoWrapper">
+            <img
+              src="./asset/icons/facebook-icon.png"
+              alt="facebook-icon"
+              class="socialLogo"
+            />
+            <img class="socialLogo" src=./asset/icons/instagram-icon.png alt=
+            "insta-icon">
+            <img
+              class="socialLogo"
+              src="./asset/icons/linkedin-icon.png"
+              alt="linkedin-icon"
+            />
+          </div>
         </div>
       </div>
       <div class="footerBottom">
@@ -134,15 +158,19 @@
           </ul>
           <button type="button">Réservez</button>
         </div>
-        <div class="footerBottomItem">          <h2 class="footerTitle">CONTACT</h2>
-          <p class="footerContactItem">
+        <div class="footerBottomItem">
+          <h2 class="footerTitle">CONTACT</h2>
+          <div class="footerContactItem">
             <img
               class="footerContactIcon"
               src="./asset/icons/adress-icon.png"
               alt="address"
             />
-            62B rue du 56ème RI </br>71100 Chalon sur Saône
-          </p>
+            <div class="footerAddress">
+              <p>62B rue du 56ème RI</p>
+              <p>71100 Chalon sur Saône</p>
+            </div>
+          </div>
           <p class="footerContactItem">
             <img
               class="footerContactIcon"
@@ -163,7 +191,6 @@
           </p>
         </div>
         <div class="footerBottomItem">
-            
           <h2 class="footerTitle">A VOTRE SERVICE</h2>
           <p>Nous rejoindre</p>
           <p>CGV</p>

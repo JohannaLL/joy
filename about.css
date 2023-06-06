@@ -1,0 +1,75 @@
+:root {
+  --primary-main-color-: #073a21;
+  --primary-color: #bf9e73;
+  --secondary-main-color: #009245;
+  --secondary-color: #bfaf9986;
+  --background-color: #bf9e731d;
+  --other-color: #000;
+}
+
+main {
+  padding: 0 25px;
+  margin-bottom: 50px;
+}
+
+.descriptionCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+}
+
+.descriptionCard img,
+.partnersImg {
+  max-width: 100%;
+  height: auto;
+}
+
+.descriptionCard h2 {
+  color: #073a21;
+}
+
+.mainTitle {
+  text-align: center;
+}
+
+.linkWrapper a {
+  text-align: left;
+  font-size: smaller;
+  color: #000;
+  padding-top: 5px;
+  margin-top: 5px;
+}
+
+.subtitle {
+  color: #009245;
+}
+
+@media screen and (min-width: 1200px) {
+  .descriptionCard {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(3, 150px);
+    margin-bottom: 50px;
+  }
+
+  .descriptionCard img {
+    grid-area: 1 / 1 / 4 / 4;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .descriptionCard h2 {
+    grid-area: 1 /4 /2 /9;
+    align-self: flex-end;
+    padding-left: 30px;
+  }
+
+  .descriptionCard p {
+    grid-area: 2/4/2/9;
+    align-self: flex-start;
+    padding-left: 30px;
+    margin: 0px;
+  }
+}

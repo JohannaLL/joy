@@ -1,0 +1,118 @@
+:root {
+  --hero-row-height: 70px;
+}
+
+.hero {
+  display: grid;
+  grid-template-rows: repeat(4, var(--hero-row-height));
+}
+
+.hero img {
+  height: 100%;
+  width: 100%;
+  grid-area: 1 / 1 / 5 / 2;
+  object-fit: cover;
+}
+
+.hero h1 {
+  grid-area: 3 / 1 / 4 / 2;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+}
+.hero h2 {
+  grid-area: 4 / 1 / 5 / 2;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+
+.textIntroduction {
+  padding: 0px 15px;
+  word-wrap: break-word;
+  text-align: justify;
+  margin: 5px;
+}
+
+.bestSalesSection {
+  padding: 0px 25px;
+}
+
+.bestSalesContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.bestSalesItem img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+.bestSalesItem {
+  text-align: center;
+}
+
+.bestSalesItem h4,
+p {
+  text-align: center;
+  padding-top: 5px;
+  margin: auto;
+}
+
+.bestSalesItem p {
+  font-size: 17px;
+}
+
+.menuButtonWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* desktop */
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    grid-template-rows: repeat(4, calc(2 * var(--hero-row-height)));
+  }
+
+  .hero img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 35px;
+    color: white;
+    text-align: center;
+  }
+  .hero h2 {
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    margin: 0;
+  }
+
+  .hero .text-introduction {
+    font-size: 18px;
+    margin-left: 10px;
+  }
+
+  .bestSalesContainer {
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* min-height: 650px; */
+  }
+
+  .bestSalesSection h2 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .bestSalesItem {
+    width: 30%;
+  }
+}
