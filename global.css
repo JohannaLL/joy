@@ -91,6 +91,7 @@ img {
 .brandIcon {
   height: 100%;
   width: 100%;
+  align-items: center;
 }
 .mobileMenu {
   width: 320px;
