@@ -7,6 +7,7 @@
   --secondary-color: #bfaf9986;
   --background-color: #bf9e731d;
   --other-color: #000;
+  --desktop-breakpoint: 1280px;
 }
 
 html,
@@ -43,15 +44,19 @@ header {
   height: 66px;
   justify-content: space-between;
   align-items: center;
-  padding: 2px 0px;
 }
 
 .searchWrapper {
   height: 100%;
+  width: 50px;
   display: flex;
   align-items: center;
   justify-content: end;
   padding-right: 30px;
+}
+
+.searchWrapper img {
+  display: none;
 }
 
 .searchInput {
@@ -78,14 +83,16 @@ header {
   text-transform: uppercase;
 }
 
+.burgerIcon {
+  padding-right: 30px;
+}
+
 #active {
   color: var(--secondary-main-color);
 }
 
 img {
   height: 75%;
-  width: auto;
-  object-fit: contain;
 }
 
 .brandIcon {
@@ -93,6 +100,7 @@ img {
   width: 100%;
   align-items: center;
 }
+
 .mobileMenu {
   width: 320px;
   background-color: var(--secondary-main-color);
@@ -140,32 +148,47 @@ footer {
 }
 
 .footerLogoWrapperText {
-  font-size: 12px;
+  font-size: 16px;
   margin: 0px;
+  margin-bottom: 10px;
 }
 
 .newsletterWrapper {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 25px;
+  margin-top: 15px;
 }
 
 .newsletterWrapper input {
   width: 150px;
+  height: 25px;
+}
+
+.social {
+  margin-top: 20px;
+}
+.social h4 {
+  text-align: center;
+  color: black;
 }
 
 .socialLogoWrapper {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  width: 50vw;
+  margin: 0px auto;
 }
 .socialLogo {
-  width: 20px;
-  height: 20px;
+  width: 35px;
+  height: 35px;
 }
 
 .footerTitle {
-  font-size: 14px;
+  width: 100%;
+  font-size: 18px;
   font-weight: 600;
   color: var(--primary-main-color-);
 }
@@ -173,7 +196,7 @@ footer {
 .footerBottom {
   display: flex;
   width: 100%;
-  font-size: 12px;
+  font-size: 18px;
   justify-content: space-between;
   flex-direction: column;
 }
@@ -221,7 +244,7 @@ footer {
 
 /* desktop */
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   /* general */
 
   button {
@@ -259,17 +282,29 @@ footer {
     width: auto;
   }
 
+  .searchWrapper {
+    width: auto;
+  }
+
   .searchInput {
     display: inline;
     border: none;
   }
 
   .searchWrapper img {
+    display: initial;
     height: 35px;
     background-color: var(--secondary-color);
     padding: 1px 2px;
   }
 
+  .footerBottomItem a button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: var(--secondary-main-color);
+    box-shadow: var(--primary-main-color-) 0px 0px 3px 2px;
+    transition-duration: 500ms;
+  }
   /* footer */
 
   .footerTitle {
@@ -279,6 +314,8 @@ footer {
 
   .newsletterWrapper {
     justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
   }
 
   .newsletterWrapper input {
@@ -293,7 +330,7 @@ footer {
     flex-direction: row;
     justify-content: space-between;
   }
-  .footerlo .footerLogoWrapperText {
+  .footerLogoWrapperText {
     font-size: 18px;
   }
 
@@ -305,6 +342,7 @@ footer {
 
   .social {
     width: 150px;
+    margin-top: 0px;
   }
 
   .footerLogoWrapperText {
@@ -315,6 +353,7 @@ footer {
 
   .socialLogoWrapper {
     justify-content: space-around;
+    width: auto;
   }
 
   .socialLogo {

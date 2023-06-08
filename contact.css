@@ -63,10 +63,10 @@ main {
 }
 
 /* desktop */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .mapInfosContainer {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin-bottom: 50px;
     min-height: 550px;
   }
@@ -82,16 +82,26 @@ main {
 
   .mapInfosContainer iframe {
     width: 100%;
-    height: 95%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
   }
   .square {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: auto;
-    width: 40%;
+    width: 45%;
     font-size: 25px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 5px 0px;
+    margin: 0px;
+  }
+
+  .menuButtonWrapper a button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: var(--secondary-main-color);
+    box-shadow: var(--primary-main-color-) 0px 0px 3px 2px;
+    transition-duration: 500ms;
   }
 }
