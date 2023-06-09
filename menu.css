@@ -7,6 +7,10 @@
   --other-color: #000;
 }
 
+main {
+  padding: 0px 10px;
+}
+
 body {
   font-family: poppins, sans serif;
   margin: 0px;
@@ -40,19 +44,21 @@ td {
 }
 
 .containerMenu td p {
-  margin: 0px;
+  margin: 4px;
 }
 
 .containerMenu h4 {
   color: #009245;
   font-size: 19px;
+  margin: 4px;
 }
 
-h5 {
+.containerMenu td h5 {
   color: #000;
   text-decoration: underline;
   margin-top: 15px;
   margin-bottom: 0px;
+  font-size: 17px;
 }
 
 .tableFirstH5 {
