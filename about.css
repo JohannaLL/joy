@@ -1,14 +1,7 @@
-:root {
-  --primary-main-color-: #073a21;
-  --primary-color: #bf9e73;
-  --secondary-main-color: #009245;
-  --secondary-color: #bfaf9986;
-  --background-color: #bf9e731d;
-  --other-color: #000;
-}
+@import url("./global.css");
 
 main {
-  padding: 0 25px;
+  padding: 0 35px;
   margin-bottom: 20px;
 }
 
@@ -41,10 +34,12 @@ main {
   text-align: left;
   font-size: smaller;
   color: #000;
+  text-decoration: none;
 }
 
-.subtitle {
+.subtitle a {
   color: #009245;
+  text-decoration: underline;
 }
 
 @media screen and (min-width: 1280px) {
@@ -73,8 +68,10 @@ main {
   .descriptionCard p {
     grid-area: 2/5/2/9;
     align-self: flex-start;
-    padding-left: 30px;
+    padding-left: 35px;
+    padding-right: 28px;
     margin: 0px;
+    text-align: justify;
   }
 
   .partnersImgWrapper {
