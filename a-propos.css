@@ -84,6 +84,6 @@ main {
   cursor: pointer;
   background-color: white;
   color: var(--secondary-main-color);
-  box-shadow: var(--primary-main-color-) 0px 0px 3px 2px;
+  box-shadow: var(--primary-main-color) 0px 0px 3px 2px;
   transition-duration: 500ms;
 }
