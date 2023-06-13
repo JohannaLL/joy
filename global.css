@@ -2,24 +2,27 @@
   font-family: "Poppins";
   src: url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
   font-weight: medium;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Poppins";
   src: url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
   font-weight: bold;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Poppins";
   src: url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
   font-weight: bolder;
+  font-display: swap;
 }
 
 /* General */
 
 :root {
-  --primary-main-color-: #073a21;
+  --primary-main-color: #073a21;
   --primary-color: #bf9e73;
   --secondary-main-color: #009245;
   --secondary-color: #bfaf9986;
@@ -44,7 +47,7 @@ li {
 }
 
 button {
-  background-color: var(--secondary-main-color);
+  background-color: var(--primary-main-color);
   border: none;
   padding: 5px 8px;
   color: white;
@@ -109,7 +112,8 @@ header {
 }
 
 #active {
-  color: var(--secondary-main-color);
+  color: var(--primary-main-color);
+  border-bottom: #073a21 solid 2px;
 }
 
 img {
@@ -215,7 +219,7 @@ footer {
   width: 100%;
   font-size: 18px;
   font-weight: bold;
-  color: var(--primary-main-color-);
+  color: var(--primary-main-color);
 }
 
 .footerBottom {
@@ -347,7 +351,7 @@ footer {
     cursor: pointer;
     background-color: white;
     color: var(--secondary-main-color);
-    box-shadow: var(--primary-main-color-) 0px 0px 3px 2px;
+    box-shadow: var(--primary-main-color) 0px 0px 3px 2px;
     transition-duration: 500ms;
   }
   /* footer */

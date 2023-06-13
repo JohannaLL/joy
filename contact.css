@@ -1,11 +1,5 @@
-:root {
-  --primary-main-color-: #073a21;
-  --primary-color: #bf9e73;
-  --secondary-main-color: #009245;
-  --secondary-color: #bfaf9986;
-  --background-color: #bf9e731d;
-  --other-color: #000;
-}
+@import url("./global.css");
+
 /*body*/
 
 main {
@@ -95,13 +89,5 @@ main {
     font-size: 25px;
     padding: 5px 0px;
     margin: 0px;
-  }
-
-  .menuButtonWrapper a button:hover {
-    cursor: pointer;
-    background-color: white;
-    color: var(--secondary-main-color);
-    box-shadow: var(--primary-main-color-) 0px 0px 3px 2px;
-    transition-duration: 500ms;
   }
 }
