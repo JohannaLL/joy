@@ -319,6 +319,10 @@ footer {
     display: none;
   }
 
+  .mobileMenu {
+    display: none;
+  }
+
   .burgerIconCheckbox {
     display: none;
   }
