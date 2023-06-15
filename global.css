@@ -175,6 +175,7 @@ img {
   height: 49px;
   margin-top: 15px;
   margin-left: 15px;
+  filter: invert(1);
 }
 
 .mobileMenuIcon {
