@@ -139,8 +139,8 @@ img {
 }
 
 .mobileMenu {
-  width: 320px;
-  background-color: var(--secondary-main-color);
+  width: 390px;
+  background-color: var(--primary-main-color);
   height: 100vh;
   position: absolute;
   top: 0px;
@@ -158,7 +158,7 @@ img {
 
 .mobileMenu a {
   text-decoration: none;
-  color: #000;
+  color: white;
   display: flex;
   align-items: center;
   margin-bottom: 28px;
@@ -179,7 +179,8 @@ img {
 
 .mobileMenuIcon {
   height: 35px;
-  margin-right: 5px;
+  margin-right: 10px;
+  filter: invert(1);
 }
 
 /* footer */
@@ -215,7 +216,7 @@ footer {
 }
 
 .social {
-  margin-top: 20px;
+  margin-top: 25px;
 }
 .social h4 {
   text-align: center;
@@ -329,7 +330,7 @@ footer {
 
   .desktopNav {
     display: initial;
-    padding: 0px;
+    padding: 1.5em;
   }
 
   .headerNav {
@@ -459,3 +460,5 @@ footer {
     margin-right: 10px;
   }
 }
+
+/* Homepage */
