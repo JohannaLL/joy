@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -40,9 +40,10 @@
 
   <body>
     <header>
-      <nav class="headerNav">
+      <div class="headerNav">
+        <input type="checkbox" class="burgerIconCheckbox" />
         <img src="./asset/icons/burger-svg.svg" alt="menu" class="burgerIcon" />
-        <div class="desktopNav">
+        <nav class="desktopNav">
           <ul>
             <li>
               <a href="index.html"> Accueil</a>
@@ -57,7 +58,7 @@
               <a href="contact.html"> Contact</a>
             </li>
           </ul>
-        </div>
+        </nav>
         <div class="brandIconWrapper">
           <a href="index.html">
             <img
@@ -76,68 +77,68 @@
           <img src="./asset/icons/search-icon.png" alt="search-icon" />
           <input class="searchInput" placeholder="Rechercher..." />
         </div>
-      </nav>
-      <nav class="mobileMenu">
-        <img
-          src="./asset/icons/close-icon.svg"
-          alt="close menu"
-          class="closeIcon"
-        />
-        <ul>
-          <li>
-            <a class="active" href="#">
-              <img
-                src="./asset/icons/accueil-icon.png"
-                alt="home"
-                class="mobileMenuIcon"
-              />
-              Accueil</a
-            >
-          </li>
-          <li>
-            <a href="menu.html">
-              <img
-                src="./asset/icons/menu-restaurant-icon.png"
-                alt="restaurant menu"
-                class="mobileMenuIcon"
-              />
-              Le menu</a
-            >
-          </li>
-          <li>
-            <a href="a-propos.html">
-              <img
-                src="./asset/icons/info-icon.png"
-                alt="about"
-                class="mobileMenuIcon"
-              />
-              À propos</a
-            >
-          </li>
-          <li>
-            <a href="contact.html">
-              <img
-                src="./asset/icons/contact-icon.png"
-                alt="contact"
-                class="mobileMenuIcon"
-              />
-              Contact</a
-            >
-          </li>
-        </ul>
-      </nav>
+        <nav class="mobileMenu">
+          <img
+            src="./asset/icons/close-icon.svg"
+            alt="close menu"
+            class="closeIcon"
+          />
+          <ul>
+            <li>
+              <a class="active" href="index.html">
+                <img
+                  src="./asset/icons/accueil-icon.png"
+                  alt="home"
+                  class="mobileMenuIcon"
+                />
+                Accueil</a
+              >
+            </li>
+            <li>
+              <a href="menu.html">
+                <img
+                  src="./asset/icons/menu-restaurant-icon.png"
+                  alt="restaurant menu"
+                  class="mobileMenuIcon"
+                />
+                Le menu</a
+              >
+            </li>
+            <li>
+              <a href="a-propos.html">
+                <img
+                  src="./asset/icons/info-icon.png"
+                  alt="about"
+                  class="mobileMenuIcon"
+                />
+                À propos</a
+              >
+            </li>
+            <li>
+              <a href="contact.html">
+                <img
+                  src="./asset/icons/contact-icon.png"
+                  alt="contact"
+                  class="mobileMenuIcon"
+                />
+                Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
       <h1 class="Title">Carte du restaurant</h1>
       <div class="containerMenu">
         <div class="drinksMenu">
-          <h4>APÉRITIFS</h4>
+          <h2>APÉRITIFS</h2>
           <table style="width: 100%">
             <thead></thead>
             <tbody>
               <tr>
                 <td>
-                  <h5 class="tableFirstH5">Avec alcool</h5>
+                  <h3 class="tableFirstH5">Avec alcool</h3>
                 </td>
               </tr>
               <tr>
@@ -155,7 +156,7 @@
 
               <tr>
                 <td>
-                  <h5>Sans alcool</h5>
+                  <h3>Sans alcool</h3>
                 </td>
               </tr>
               <tr>
@@ -164,7 +165,7 @@
               </tr>
               <tr>
                 <td>
-                  <h5>Boissons froides</h5>
+                  <h3>Boissons froides</h3>
                 </td>
               </tr>
               <tr>
@@ -187,7 +188,7 @@
               </tr>
               <tr>
                 <td>
-                  <h5>Boissons chaudes</h5>
+                  <h3>Boissons chaudes</h3>
                 </td>
               </tr>
 
@@ -211,7 +212,7 @@
           </table>
         </div>
         <div class="mealMenu">
-          <h4>ENTRÉES</h4>
+          <h2>ENTRÉES</h2>
           <table style="width: 100%">
             <tbody>
               <tr>
@@ -262,7 +263,7 @@
               </tr>
               <tr>
                 <td>
-                  <h4>PLATS</h4>
+                  <h2>PLATS</h2>
                 </td>
               </tr>
               <tr>
@@ -301,7 +302,7 @@
                 <td>
                   <tr>
                     <td>
-                      <h4>DESSERTS</h4>
+                      <h2>DESSERTS</h2>
                     </td>
                   </tr>
                 </td>

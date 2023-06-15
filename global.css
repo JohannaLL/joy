@@ -111,6 +111,14 @@ header {
   padding-right: 30px;
 }
 
+.burgerIconCheckbox {
+  z-index: 50;
+  opacity: 0;
+  position: absolute;
+  height: 50px;
+  width: 50px;
+}
+
 #active {
   color: var(--primary-main-color);
   border-bottom: #073a21 solid 2px;
@@ -136,7 +144,16 @@ img {
   height: 100vh;
   position: absolute;
   top: 0px;
-  display: none;
+  z-index: 30;
+  transform: translateX(-150%);
+  transition-duration: 250ms;
+}
+
+.headerNav input[type="checkbox"]:checked ~ .mobileMenu {
+  display: initial;
+  transform: translateX(0);
+  transition: ease-in-out;
+  transition-duration: 500ms;
 }
 
 .mobileMenu a {
@@ -180,6 +197,7 @@ footer {
   font-size: 16px;
   margin: 0px;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .newsletterWrapper {
@@ -220,6 +238,7 @@ footer {
   font-size: 18px;
   font-weight: bold;
   color: var(--primary-main-color);
+  text-align: center;
 }
 
 .footerBottom {
@@ -363,7 +382,7 @@ footer {
 
   .newsletterWrapper {
     justify-content: space-evenly;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
   }
 
@@ -385,14 +404,15 @@ footer {
   }
 
   .neswletterText h3 {
-    margin-left: 0;
     display: flex;
+    justify-content: center;
     font-size: 16px;
+    margin-bottom: 1em;
   }
 
   .social {
     width: 150px;
-    margin-top: 0px;
+    margin-top: 25px;
   }
 
   .footerLogoWrapperText {

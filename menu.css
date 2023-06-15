@@ -40,13 +40,13 @@ td {
   margin: 4px;
 }
 
-.containerMenu h4 {
+.containerMenu h2 {
   color: #009245;
   font-size: 19px;
   margin: 4px;
 }
 
-.containerMenu td h5 {
+.containerMenu td h3 {
   color: #000;
   text-decoration: underline;
   margin-top: 15px;
@@ -54,7 +54,7 @@ td {
   font-size: 17px;
 }
 
-.tableFirstH5 {
+.tableFirstH3 {
   margin-top: 0px;
 }
 
@@ -67,7 +67,7 @@ strong {
   .containerMenu {
     display: flex;
     justify-content: space-between;
-    padding: 0px 15px;
+    padding: 1.5em;
     margin: 0px 25px 50px 25px;
     background-color: rgba(255, 255, 255, 0.5);
   }

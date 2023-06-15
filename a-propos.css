@@ -19,11 +19,20 @@ main {
 }
 
 .descriptionCard h2 {
-  color: #073a21;
+  color: #009245;
+  font-size: 23px;
+}
+
+h2 {
+  color: #009245;
+  font-size: 23px;
+  text-align: center;
 }
 
 .mainTitle {
   text-align: center;
+  color: #073a21;
+  font-size: 28px;
 }
 
 .linkWrapper {
@@ -38,7 +47,7 @@ main {
 }
 
 .subtitle a {
-  color: #009245;
+  color: #073a21;
   text-decoration: underline;
 }
 
@@ -63,6 +72,10 @@ main {
     padding-left: 30px;
     margin-top: 0px;
     padding-top: 0px;
+  }
+
+  h2 {
+    text-align: initial;
   }
 
   .descriptionCard p {
