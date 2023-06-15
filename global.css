@@ -319,6 +319,10 @@ footer {
     display: none;
   }
 
+  .burgerIconCheckbox {
+    display: none;
+  }
+
   .desktopNav {
     display: initial;
     padding: 0px;
