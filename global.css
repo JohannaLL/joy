@@ -180,6 +180,7 @@ footer {
   font-size: 16px;
   margin: 0px;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .newsletterWrapper {
@@ -220,6 +221,7 @@ footer {
   font-size: 18px;
   font-weight: bold;
   color: var(--primary-main-color);
+  text-align: center;
 }
 
 .footerBottom {
@@ -363,7 +365,7 @@ footer {
 
   .newsletterWrapper {
     justify-content: space-evenly;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
   }
 
@@ -385,14 +387,15 @@ footer {
   }
 
   .neswletterText h3 {
-    margin-left: 0;
     display: flex;
+    justify-content: center;
     font-size: 16px;
+    margin-bottom: 1em;
   }
 
   .social {
     width: 150px;
-    margin-top: 0px;
+    margin-top: 25px;
   }
 
   .footerLogoWrapperText {
