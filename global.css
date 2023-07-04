@@ -55,6 +55,23 @@ button {
   font-family: "Poppins", sans-serif;
 }
 
+/* preHeader */
+
+.preHeader {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-size: 10px;
+  display: flex;
+  padding: 5px 0px;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.preHeader a {
+  color: white;
+}
+
 /* Header */
 
 header {
@@ -313,6 +330,19 @@ footer {
 
   button {
     font-size: 16px;
+  }
+
+  /* preHeader */
+
+  .preHeader {
+    flex-direction: row;
+    justify-content: center;
+    font-size: 12px;
+  }
+
+  .preHeader p {
+    margin: 0px 10px;
+    width: 450px;
   }
 
   /* header */
